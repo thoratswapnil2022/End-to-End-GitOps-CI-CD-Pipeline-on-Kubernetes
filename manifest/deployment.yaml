@@ -12,6 +12,8 @@ spec:
       labels:
         app: node-app
     spec:
+      imagePullSecrets:
+        - name: dockerhub-secret
       containers:
       - name: node-app
         image: thoratswapnil2022/my-app:f2ba8a31b0adaa95cd4ece35fb78d40b3cb8680d
